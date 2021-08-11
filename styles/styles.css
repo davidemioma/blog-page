@@ -1,0 +1,288 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", "Ubuntu";
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.block_header {
+  background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-bottom-left-radius: 100px;
+  margin-bottom: 10rem;
+}
+
+.nav_bar {
+  padding: 5rem 2rem 10rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nav_img1 {
+  align-self: center;
+}
+
+.nav_img2 {
+  justify-self: end;
+  align-self: center;
+  margin-top: -10px;
+}
+
+.header {
+  padding: 0 0 15rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.btn_grid {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.btn_white {
+  color: hsl(353, 100%, 62%);
+}
+
+.btn_orange {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.block_future {
+  margin-bottom: 35rem;
+}
+
+.future,
+.laptop {
+  text-align: center;
+}
+
+.future_heading {
+  margin-bottom: 5rem;
+}
+
+.future_img,
+.laptop_img {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.future_content,
+.laptop_content {
+  width: 80%;
+  text-align: center;
+}
+
+.future_content .p,
+.laptop_content .p {
+  margin-bottom: 4rem;
+}
+
+.future_content h2,
+.laptop_content h2 {
+  margin-bottom: 2rem;
+}
+
+.future_content p,
+.laptop_content p {
+  opacity: 0.6;
+}
+
+.future_grid,
+.laptop_grid {
+  display: grid;
+  justify-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .block_future {
+    margin-bottom: 45rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .future_grid,
+  .laptop_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .block_future {
+    margin-bottom: 15rem;
+    overflow: hidden;
+  }
+
+  .future_img {
+    content: url(../images/illustration-editor-desktop.svg);
+    order: 1;
+    align-self: center;
+    transform: translateX(50%) scale(1.8);
+  }
+
+  .laptop_img {
+    content: url(../images/illustration-laptop-desktop.svg);
+    align-self: center;
+    transform: translateX(-50%) scale(1.8);
+  }
+
+  .future_content,
+  .laptop_content {
+    text-align: left;
+  }
+}
+
+.block_phone {
+  background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  position: relative;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-bottom: 10rem;
+}
+
+.phone_img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.phone_content {
+  padding: 23rem 0 10rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.phone_content p {
+  opacity: 0.6;
+}
+
+.phone_grid {
+  display: grid;
+  justify-items: center;
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+@media screen and (min-width: 768px) {
+  .phone_content {
+    padding: 33rem 0 10rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .phone_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .block_phone {
+    margin-bottom: 15rem;
+  }
+
+  .phone_img {
+    position: relative;
+    transform: translateY(0) scaleY(1.5);
+  }
+
+  .phone_content {
+    padding: 5rem 0;
+    order: 1;
+  }
+}
+
+.block_laptop {
+  margin-bottom: 10rem;
+}
+
+.footer {
+  background: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+}
+
+.footer_content {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.list h4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.list li {
+  font-size: 1.8rem;
+  color: #fff;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.footer_grid {
+  display: grid;
+  gap: 4rem;
+  justify-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
