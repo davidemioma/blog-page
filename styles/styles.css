@@ -45,6 +45,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .collapsible_content {
   max-height: 0;
   opacity: 0;
