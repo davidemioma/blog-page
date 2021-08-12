@@ -338,7 +338,7 @@ p {
 
   .phone_img {
     position: relative;
-    transform: translateY(0) scale(1.4, 1.5);
+    transform: translateY(0) scaleY(1.5);
     justify-self: start;
     align-self: center;
     max-width: 600px;
