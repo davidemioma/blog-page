@@ -16,9 +16,21 @@
 </head>
 <body>
     <section class="block_header">
-        <nav class="nav_bar">
-            <img class="nav_img1" src="./images/logo.svg" alt="">
-            <img class="nav_img2" src="./images/icon-hamburger.svg" alt="">
+        <nav class="nav_bar collapsible">
+            <img class="img1" src="./images/logo.svg" alt="">
+            <img class="nav_toggler" src="./images/icon-hamburger.svg" alt="">
+            
+            <ul class="nav_list collapsible_content">
+                <li class="nav_item"><a href="#"><span>Product <img src="./images/icon-arrow-light.svg" alt=""></span></a></li>
+            
+                <li class="nav_item"><a href="#"><span>Company <img src="./images/icon-arrow-light.svg" alt=""></span></a></li>
+            
+                <li class="nav_item"><a href="#"><span>Connect <img src="./images/icon-arrow-light.svg" alt=""></span></a></li>
+            
+                <li class="nav_item"><a href="#">Login</a></li>
+            
+                <button class="nav_item nav_btn">Sign Up</button>
+            </ul>
         </nav>
         
         <div class="header">
@@ -121,5 +133,6 @@
             </div>
         </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
